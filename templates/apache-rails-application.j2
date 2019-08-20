@@ -1,7 +1,5 @@
 {% if apache_virtualhost_lines %}
-  {% for line in apache_virtualhost_lines %}
-    {{ line }}
-  {% endfor %}
+  {{ apache_virtualhost_lines }}
 {% endif %}
 
 {% if apache_virtualhost_docroot %}
