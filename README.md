@@ -6,10 +6,10 @@ This is for use with Ruby on Rails on NCSU Libraries servers that are setup usin
 
 ### Required variables
 
-Values for the following variables must be set when running this role.
+Values for the following variables must be set when running this role:
 
-`web_server_name` is the fully qualified domain name
-`vhost_shortname` is the short name given to the vhost in the puppet configuration for this server
+* `web_server_name` is the fully qualified domain name
+* `vhost_shortname` is the short name given to the vhost in the puppet configuration for this server
 
 ### Optional variables
 
