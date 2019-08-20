@@ -4,8 +4,13 @@
   {% endfor %}
 {% endif %}
 
+{% if apache_virtualhost_docroot %}
+DocumentRoot {{apache_virtualhost_docroot}}
+{% else %}
 # Be sure to point to 'public'!
 DocumentRoot /opt/{{project_name}}/current/public
+{% endif %}
+
 <Directory /opt/{{project_name}}/current/public>
   RackEnv {{passenger_app_env}}
   PassengerRuby /usr/local/rvm/gems/{{ruby}}/wrappers/ruby
